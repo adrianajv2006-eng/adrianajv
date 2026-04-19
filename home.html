@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adriana Jimenez — Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Calibri', 'Candara', 'Segoe UI', sans-serif;
+      background-color: #f7f5f2;
+      color: #2c2c2a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid #d3d1c7;
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    header p.subtitle {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888780;
+      margin-bottom: 0.6rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #2c2c2a;
+    }
+
+    header h1 span {
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem;
+      width: 100%;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #5f5e5a;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #d3d1c7;
+    }
+
+    .description em {
+      font-style: normal;
+      color: #2c2c2a;
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .year-btn {
+      display: block;
+      text-decoration: none;
+      padding: 1.6rem 1rem;
+      text-align: center;
+      background-color: #ffffff;
+      border: 1px solid #d3d1c7;
+      border-radius: 4px;
+      font-family: 'Calibri', 'Candara', 'Segoe UI', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #444441;
+      letter-spacing: 0.04em;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .year-btn:hover {
+      background-color: #f1efe8;
+      border-color: #b4b2a9;
+      color: #2c2c2a;
+    }
+
+    .year-btn .label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #888780;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      border-top: 1px solid #d3d1c7;
+      background-color: #ffffff;
+    }
+
+    footer p {
+      font-size: 0.72rem;
+      color: #b4b2a9;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .year-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="subtitle">Portfolio</p>
+    <h1>Adriana Jimenez</h1>
+  </header>
+
+  <main>
+    <p class="description">
+      Each year below showcases the coolest thing I have made that year. They
+      aren't the most intricate or impressive, but I just wanted to show my love for
+      creating things just because. I think this demonstrates why I would be a good fit in the shop and that I would take advantage of the
+      resources and knowledge this role would bring me.
+    </p>
+
+    <div class="year-grid">
+      <a href="2026.html" class="year-btn">
+        2026
+        <span class="label">This year</span>
+      </a>
+      <a href="2025.html" class="year-btn">
+        2025
+        <span class="label">Last year</span>
+      </a>
+      <a href="2024.html" class="year-btn">
+        2024
+        <span class="label">Two years ago</span>
+      </a>
+      <a href="2023.html" class="year-btn">
+        2023
+        <span class="label">Three years ago</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      I made this pretty quickly!, been meaning to build a portfolio template forever. genuinely long overdue, lol.
+    </p>
+  </footer>
+
+</body>
+</html>
